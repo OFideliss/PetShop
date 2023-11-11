@@ -1,81 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>Divisão da Tela em 4 Partes com Bootstrap</title>
-    <style>
-        .infoPedido {
-       
-        }
-
-        .infoPedido .row {
-            height: 100%;
-        }
-
-        .infoPedido .col {
-            border: 1px solid #000;
-            background: #D0E2DA;
-        }
-
-        .infoPedido .col h1,
-        .infoPedido .col form {
-            margin: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Pedido</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <div class="infoPedido">
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col">
-                    <div class="bg-light text-center p-4">
-                        <h1>1</h1>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar Pedido"
-                                aria-label="Search">
-                        </form>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="bg-light text-center p-4">
-                        <h1>2</h1>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar Pedido"
-                                aria-label="Search">
-                        </form>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="bg-light text-center p-4">
-                        <h1>3</h1>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar Pedido"
-                                aria-label="Search">
-                        </form>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="bg-light text-center p-4">
-                        <h1>4</h1>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar Pedido"
-                                aria-label="Search">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="pedido">
+    <!-- Produto 1 -->
+    <div class="produto">
+      <img src="images/RacaoPedidos.jpg" alt="Produto 1">
+      <div class="descricao">
+        <h4>Nome do Produto 1</h4>
+        <p>Marca do Produto 1</p>
+        <p>Valor: R$XX,XX</p>
+        <button class="comprarBotao">Comprar Novamente</button>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Produto 2 -->
+    <div class="produto">
+      <img src="caminho-da-imagem2.jpg" alt="Produto 2">
+      <div class="descricao">
+        <h4>Nome do Produto 2</h4>
+        <p>Marca do Produto 2</p>
+        <p>Valor: R$XX,XX</p>
+        <button class="comprarBotao">Comprar Novamente</button>
+      </div>
+    </div>
+  </div>
 
 </body>
-
 </html>

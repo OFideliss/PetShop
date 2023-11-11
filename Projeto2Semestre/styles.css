@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pedido {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .produto {
+    display: flex; /* Adicionado para colocar imagem e texto lado a lado */
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+  }
+  
+  .produto img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .descricao {
+    margin-left: 20px; /* Adicionado espaçamento entre imagem e texto */
+  }
+  
+  .comprarBotao {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
