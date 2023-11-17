@@ -240,10 +240,92 @@
     margin-top: 1%;
     margin-left: 3%;
     margin-right: 3%;
-    height: 300px;
     display: flex;
-    max-width: 50%;
+    /* Distribui os elementos igualmente */
+    justify-content: space-between;
+    /* Alinha verticalmente no centro (opcional) */
+    align-items: center;
+
 }
+
+.imgItem {
+    /* largura desejada */
+    width: 200px;
+    /* altura desejada */
+    height: 300px;
+    /* para ocultar partes da imagem que excedem os limites */
+    overflow: hidden;
+
+    /* Para centralizar a imagem verticalmente e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgItem img {
+    /* Ajusta a largura da imagem para preencher a div */
+    width: 100%;
+    /* Ajusta a altura da imagem para preencher a div */
+    height: 90%;
+    /* Mantém a proporção da imagem e a insere dentro do contêiner */
+    object-fit: contain;
+}
+
+.descricao {
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.descricao h5 {
+    font-weight: bold;
+    /* Fica no topo */
+    align-self: flex-start;
+    /* Para evitar que ultrapasse o limite inferior */
+    margin-bottom: auto;
+    text-align: left;
+}
+
+.descricao h6 {
+    font-weight: bold;
+    /* Para evitar que ultrapasse o limite superior */
+    margin-top: auto;
+    text-align: left;
+}
+
+.comprNov {
+    /* largura desejada */
+    width: 300px;
+    /* altura desejada */
+    height: 300px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.comprNov button {
+    background-color: #2A8A5C;
+}
+
+
+
+    
+
+
+
+/* 
 
 .imgItem {
     display: flex;
@@ -253,8 +335,8 @@
 
 .imgItem img {
     max-width: 80%;
-    max-height: 200%;
-}
+    max-height: 100%;
+} */
 
 /* .descricao {
     flex-grow: 1;
