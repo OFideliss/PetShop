@@ -220,10 +220,20 @@
 
 }
 
+@media screen and (min-width: 1600px) {
+
 .itensPedido {
     display: flex;
     justify-content: space-around;
 }
+
+}
+
+@media screen and (max-width: 1600px) {
+    
+    
+    
+    }
 
 .itensPedido .col-6 {
     margin-top: 0.5%;
